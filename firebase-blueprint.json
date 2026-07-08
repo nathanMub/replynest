@@ -1,0 +1,153 @@
+{
+  "entities": {
+    "BusinessProfile": {
+      "title": "BusinessProfile",
+      "description": "Secure business profile for authenticated users",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The unique profile identifier"
+        },
+        "userId": {
+          "type": "string",
+          "description": "The owner's Firebase user ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Profile Nickname"
+        },
+        "email": {
+          "type": "string",
+          "description": "Business Contact Email"
+        },
+        "businessName": {
+          "type": "string",
+          "description": "Business Name"
+        },
+        "industry": {
+          "type": "string",
+          "description": "Industry Type"
+        },
+        "businessDescription": {
+          "type": "string",
+          "description": "Details about what the business sells or does"
+        },
+        "country": {
+          "type": "string",
+          "description": "Business location country"
+        },
+        "phoneNumber": {
+          "type": "string",
+          "description": "Business phone number"
+        },
+        "whatsAppNumber": {
+          "type": "string",
+          "description": "Business WhatsApp number"
+        },
+        "website": {
+          "type": "string",
+          "description": "Business Website URL"
+        },
+        "brandTone": {
+          "type": "string",
+          "description": "Selected brand tone"
+        },
+        "brandPersonality": {
+          "type": "string",
+          "description": "Short description of the brand personality"
+        },
+        "shippingPolicy": {
+          "type": "string",
+          "description": "Shipping and delivery policies"
+        },
+        "returnPolicy": {
+          "type": "string",
+          "description": "Return and refund policies"
+        },
+        "paymentMethods": {
+          "type": "string",
+          "description": "Accepted payment methods"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Timestamp of creation"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp of last modification"
+        }
+      },
+      "required": [
+        "id",
+        "userId",
+        "name",
+        "email",
+        "businessName",
+        "industry",
+        "businessDescription"
+      ]
+    },
+    "UserPlan": {
+      "title": "UserPlan",
+      "description": "Tracks the free trials, usage metrics, subscription plan, and limits for both Guest, Free, and Pro tiers.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier, same as userId or guestId"
+        },
+        "userId": {
+          "type": "string",
+          "description": "The user's unique identifier (guestId or real userId)"
+        },
+        "email": {
+          "type": "string",
+          "description": "User email address if registered"
+        },
+        "plan": {
+          "type": "string",
+          "description": "Subscription plan: Guest, Free, or Pro"
+        },
+        "repliesRemaining": {
+          "type": "integer",
+          "description": "Number of AI reply generations remaining"
+        },
+        "totalRepliesGenerated": {
+          "type": "integer",
+          "description": "Cumulative count of AI replies generated"
+        },
+        "subscriptionStatus": {
+          "type": "string",
+          "description": "Status of subscription: active or inactive"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Creation timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Modification timestamp"
+        }
+      },
+      "required": [
+        "id",
+        "userId",
+        "plan",
+        "repliesRemaining",
+        "totalRepliesGenerated",
+        "subscriptionStatus"
+      ]
+    }
+  },
+  "firestore": {
+    "businessProfiles/{profileId}": {
+      "schema": "BusinessProfile",
+      "description": "Secure business profiles of ReplyNest users"
+    },
+    "userPlans/{planId}": {
+      "schema": "UserPlan",
+      "description": "Subscription and limits tracking for ReplyNest users and guests"
+    }
+  }
+}

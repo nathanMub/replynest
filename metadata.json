@@ -1,0 +1,6 @@
+{
+  "name": "ReplyNest AI",
+  "description": "Your 24/7 AI employee that automatically chats with customers on your website, answers FAQs, captures leads, and drives sales.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

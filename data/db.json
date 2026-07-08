@@ -1,0 +1,322 @@
+{
+  "users": [
+    {
+      "id": "da373605-96a9-4c1a-943e-ab449a2258d9",
+      "email": "nathanmubvuta@gmail.com",
+      "name": "nathan nathan",
+      "passwordHash": "",
+      "messageCount": 5,
+      "isSubscribed": false
+    },
+    {
+      "id": "927f42bf-fc92-428c-a78c-aa0d49b2c5fb",
+      "email": "tester@example.com",
+      "name": "Tester",
+      "passwordHash": "0ac23f41e408f7357057e5c16b01ae05ce22724865e29e0477c7c070c18adf1a",
+      "messageCount": 0,
+      "isSubscribed": true,
+      "subscriptionType": "monthly"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "ba36b664-c177-417d-8aed-64a36cf6670d",
+      "userId": "da373605-96a9-4c1a-943e-ab449a2258d9",
+      "name": "nathan nathan's Shop",
+      "businessType": "Clothing Store",
+      "tone": "Friendly",
+      "customDetails": "We sell premium organic cotton apparel with same-day London shipping."
+    },
+    {
+      "id": "f872abdb-b307-49a2-b190-9dd01da64db7",
+      "userId": "927f42bf-fc92-428c-a78c-aa0d49b2c5fb",
+      "name": "Tester's Shop",
+      "businessType": "Clothing Store",
+      "tone": "Friendly",
+      "customDetails": "We sell premium organic cotton apparel with same-day London shipping."
+    }
+  ],
+  "conversations": [
+    {
+      "id": "2c6d0b1a-55bf-45bb-b130-84e5edefb567",
+      "userId": "da373605-96a9-4c1a-943e-ab449a2258d9",
+      "timestamp": "2026-07-02T03:08:38.983Z",
+      "businessType": "Clothing Store",
+      "goal": "Close a Sale",
+      "tone": "Friendly",
+      "message": "Hi I recently went to your website and it was not letting me buy the pere of shoes I wanted",
+      "replies": [
+        {
+          "id": "reply_1",
+          "type": "best_overall",
+          "label": "Best Overall",
+          "content": "Oh no! I'm so sorry you had trouble checking out. 😔 I'd love to help you get those shoes right away!\\n\\nCould you let me know which pair you had your eye on and your size? I can check our stock and send you a secure payment link right here so you don't miss out! 👟✨",
+          "explanation": "Expresses empathy, offers immediate help, and proposes a direct WhatsApp checkout solution to secure the sale instantly."
+        },
+        {
+          "id": "reply_2",
+          "type": "friendly",
+          "label": "Friendly",
+          "content": "Hi there! 😊 So sorry the website was giving you a hard time! Let's get that sorted for you.\\n\\nWhich shoes were you looking to grab? Tell me the style and your size, and I'll personally make sure they get reserved for you today! 🛍️",
+          "explanation": "Warm and approachable tone that makes the customer feel valued and personally taken care of."
+        },
+        {
+          "id": "reply_3",
+          "type": "professional",
+          "label": "Professional",
+          "content": "Hello! Thank you for reaching out, and please accept our apologies for the website issue. I would be happy to assist you with your purchase manually.\\n\\nCould you please share the style name or a photo of the shoes, along with your size? I can process the order and secure payment directly through this chat. 💼",
+          "explanation": "Polite, structured, and reassuringly professional, ensuring the customer feels safe completing the transaction."
+        },
+        {
+          "id": "reply_4",
+          "type": "sales_focused",
+          "label": "Sales Focused",
+          "content": "Oh no! We definitely don't want you missing out on those! 👟 That style has been super popular this week and stock is running really low.\\n\\nTell me your size and I'll hold them for you right now. I can send you a quick payment link and even add a *10% discount code* for the website trouble! 😉 Shall we secure your pair?",
+          "explanation": "Creates urgency by mentioning low stock and incentivizes the immediate sale with a discount code to close the deal."
+        },
+        {
+          "id": "reply_5",
+          "type": "short_version",
+          "label": "Short Version",
+          "content": "Hi! So sorry about the website glitch. 🤦‍♂️ Which shoes and size were you looking for? I can check our stock and place the order for you right here!",
+          "explanation": "Brief and straight to the point, ideal for quick WhatsApp interactions."
+        }
+      ]
+    },
+    {
+      "id": "dc787423-50b8-42f5-ba70-79bab906d73b",
+      "userId": "da373605-96a9-4c1a-943e-ab449a2258d9",
+      "timestamp": "2026-07-02T03:33:37.194Z",
+      "businessType": "Clothing Store",
+      "goal": "Handle Complaint",
+      "tone": "Friendly",
+      "message": "Hi, I bought the denim jacket yesterday but size M is a bit too tight. Can I swap it for a size L? If not, how do I get a refund?",
+      "replies": [
+        {
+          "id": "reply_1",
+          "type": "best_overall",
+          "label": "Best Overall",
+          "content": "Hi! Oh no, we want you to feel absolutely amazing in your new denim jacket! 💙\n\nYes, you can absolutely swap it for a size L. We actually have a few left in stock right now, so I can reserve one for you immediately.\n\nWould you prefer to swing by the store to swap it, or should we arrange a quick courier exchange right to your doorstep?",
+          "explanation": "This reply is warm, reassuring, and immediately solves the customer's problem. It offers a clear call to action to proceed with the exchange, preventing a refund."
+        },
+        {
+          "id": "reply_2",
+          "type": "friendly",
+          "label": "Friendly",
+          "content": "Hey there! Thanks for reaching out. 😊 Don't worry at all, we've got you totally covered!\n\nWe want you to love your jacket, so swapping it for a size L is no problem at all. If you'd still prefer a refund, we can easily guide you through that process too.\n\nWhich option works best for you?",
+          "explanation": "Focuses on building rapport with an extremely helpful and pressure-free tone, making the customer feel valued and understood."
+        },
+        {
+          "id": "reply_3",
+          "type": "professional",
+          "label": "Professional",
+          "content": "Hello! Thank you for contacting us. We would be happy to assist you with your denim jacket swap or refund.\n\nWe currently have size L in stock. To proceed, we can facilitate this in two ways:\n1. *In-Store:* Bring the jacket to our store for an instant swap.\n2. *Online:* We can send a courier to collect the item and deliver the new size.\n\nPlease let us know which option you prefer so we can initiate the process for you.",
+          "explanation": "Presents the exchange policies and steps clearly and logically, maintaining a polite and structured corporate tone."
+        },
+        {
+          "id": "reply_4",
+          "type": "sales_focused",
+          "label": "Sales Focused",
+          "content": "Hi! Let's get you that perfect fit. I've just reserved a size L denim jacket for you so you don't miss out! 🧥✨\n\nSince the L has a slightly relaxed fit, it looks incredible paired with our classic white tees. If you'd like, I can add one to your exchange order today with an exclusive *15% discount*!\n\nWould you like me to process the exchange and add the promo tee to your package?",
+          "explanation": "Secures the exchange to prevent a refund, and immediately uses the opportunity to cross-sell a complementary item with a discount."
+        },
+        {
+          "id": "reply_5",
+          "type": "short",
+          "label": "Short Version",
+          "content": "Hi! Yes, we can absolutely swap that for a size L or process a refund for you. 😊\n\nWhich of those would you prefer to do?",
+          "explanation": "A minimalist, easy-to-read reply that gets straight to the point without overwhelming the customer."
+        }
+      ]
+    },
+    {
+      "id": "8cac1b7b-c1fd-49b7-b958-d1192d627ee8",
+      "userId": "da373605-96a9-4c1a-943e-ab449a2258d9",
+      "timestamp": "2026-07-02T03:34:21.147Z",
+      "businessType": "Clothing Store",
+      "goal": "Handle Complaint",
+      "tone": "Friendly",
+      "message": "Hi, I bought the denim jacket yesterday but size M is a bit too tight. Can I swap it for a size L? If not, how do I get a refund?",
+      "replies": [
+        {
+          "id": "reply_1",
+          "type": "best_overall",
+          "label": "Best Overall Reply",
+          "content": "Hi there! Oh no, we want you to feel absolutely amazing and comfortable in your new denim jacket! 🧥\n\nYes, we can absolutely swap that for a size L for you. Since you just bought it yesterday, the process is super easy! Did you purchase this in our store or online? \n\nOnce you let me know, I'll guide you through the quick steps to get the right size in your hands. 😊",
+          "explanation": "This reply is warm, reassuring, and immediately solves the customer's problem. By asking where they bought it, it initiates a smooth customer service flow to resolve the issue."
+        },
+        {
+          "id": "reply_2",
+          "type": "friendly",
+          "label": "Friendly Reply",
+          "content": "Hey! Don't worry at all, we've got you covered! 💙 \n\nWe want you to love your jacket, so we can definitely swap that M for a size L to get you that perfect fit. If you'd still prefer a refund, we can absolutely process that for you too, no questions asked!\n\nCould you send over your order number or receipt photo? I'll get this sorted out for you right away! ✨",
+          "explanation": "Emphasizes customer happiness with an upbeat, friendly tone. It reassures them that both exchanges and refunds are easy, building trust."
+        },
+        {
+          "id": "reply_3",
+          "type": "professional",
+          "label": "Professional Reply",
+          "content": "Hello. Thank you for contacting us, and we apologize that the size M was not the perfect fit. \n\nWe would be pleased to exchange your jacket for a size L, or assist you with a full refund. To help us process this quickly for you, could you please provide your receipt or order number?\n\nOnce received, we will provide you with the next steps for your exchange or return. Thank you for your patience!",
+          "explanation": "Maintains a polite, structured, and formal tone suitable for customers who prefer a highly professional approach to service issues."
+        },
+        {
+          "id": "reply_4",
+          "type": "sales_focused",
+          "label": "Sales Focused Reply",
+          "content": "Hi! Absolutely, we can swap that to a size L for you! 🧥 The denim jacket is designed for a slightly relaxed fit, so the L is going to look incredible on you.\n\nI have reserved a size L for you right now so it doesn't sell out. By the way, we just got some amazing *knit hoodies* that layer perfectly under that exact jacket! \n\nWould you like me to send a quick photo of those to see if you want to try one on when you swap the jacket? 🛍️",
+          "explanation": "Validates the size swap, secures the inventory to make them feel valued, and seamlessly introduces a complementary item (upsell) to increase basket value."
+        },
+        {
+          "id": "reply_5",
+          "type": "short",
+          "label": "Short Version",
+          "content": "Hi! Yes, we can absolutely swap it for a size L, or process a refund if you prefer. 😊\n\nDid you buy it online or in-store? Let me know and I'll send you the quick next steps!",
+          "explanation": "A concise, low-friction reply that gets straight to the point while maintaining a helpful and friendly tone for quick reading."
+        }
+      ]
+    },
+    {
+      "id": "27fc315b-5461-4771-8898-bd71e4a16453",
+      "userId": "da373605-96a9-4c1a-943e-ab449a2258d9",
+      "timestamp": "2026-07-02T03:34:33.859Z",
+      "businessType": "Clothing Store",
+      "goal": "Handle Complaint",
+      "tone": "Friendly",
+      "message": "Hi, I bought the denim jacket yesterday but size M is a bit too tight. Can I swap it for a size L? If not, how do I get a refund?",
+      "replies": [
+        {
+          "id": "reply_1",
+          "type": "best_overall",
+          "label": "Best Overall",
+          "content": "Hi there! 😊 We can absolutely help you swap that denim jacket for a size L so you get the perfect, comfortable fit! \n\nWe currently have the size L in stock. Would you like us to hold it for you to exchange in-store, or would you prefer us to arrange a quick courier exchange at your doorstep?\n\n(And don't worry, if you still prefer a refund, we can easily process that for you too! Just let us know what works best for you.)",
+          "explanation": "This response is friendly, reassuring, and immediately solves the customer's problem. It offers multiple convenient exchange options to reduce friction and gently mentions the refund as a fallback to build trust."
+        },
+        {
+          "id": "reply_2",
+          "type": "friendly",
+          "label": "Friendly",
+          "content": "Oh no, we want you to feel absolutely amazing and comfortable in your new jacket! 🧥✨ We can definitely swap that M for a size L for you.\n\nCould you send over your order number or receipt? I'll personally check our inventory right now and get that size L put aside so you don't miss out. How does that sound? 😊",
+          "explanation": "Empathizes with the fit issue, uses warm emojis, and takes immediate personal initiative to reserve the item, creating a high-touch, friendly boutique experience."
+        },
+        {
+          "id": "reply_3",
+          "type": "professional",
+          "label": "Professional",
+          "content": "Hello. Thank you for reaching out to us. We would be happy to assist you with either an exchange or a refund for your denim jacket.\n\nTo swap for a *size L*, we can reserve the item for you today. If you prefer a *refund*, we can process it immediately upon receiving the jacket back in its original condition.\n\nCould you please provide your order number so we can look up your transaction and guide you through the next steps?",
+          "explanation": "Clear, structured, and polite. It outlines the processes for both exchanges and refunds without being overly casual, which appeals to customers looking for efficient service."
+        },
+        {
+          "id": "reply_4",
+          "type": "sales_focused",
+          "label": "Sales Focused",
+          "content": "Hi! We'd love to get you that size L so you can rock that denim look in total comfort! 😎 Let's get that swap sorted for you right away.\n\nBy the way, since you love the denim jacket, we just launched a new collection of *organic cotton tees* that look incredible underneath it! I can add one to your exchange order today with a special **15% discount** and free shipping. \n\nWould you like me to send over a few colors to look at while we process your exchange? 🙌",
+          "explanation": "Quickly resolves the exchange issue to make the customer happy, then uses the opportunity to cross-sell a matching product (tees) with an exclusive discount, turning a return inquiry into an upsell opportunity."
+        },
+        {
+          "id": "reply_5",
+          "type": "short",
+          "label": "Short",
+          "content": "Hi! Yes, we can absolutely swap that denim jacket for a size L or process a quick refund for you. 😊\n\nJust reply with your order number and let us know which option you'd prefer. We'll take care of the rest!",
+          "explanation": "Short, punchy, and direct. Ideal for customers who want quick answers and fast resolution without reading a longer message."
+        }
+      ]
+    },
+    {
+      "id": "25866629-2f38-4f9b-8138-1e8fd7818173",
+      "userId": "da373605-96a9-4c1a-943e-ab449a2258d9",
+      "timestamp": "2026-07-02T03:34:57.196Z",
+      "businessType": "Clothing Store",
+      "goal": "Handle Complaint",
+      "tone": "Premium",
+      "message": "Hi, I bought the denim jacket yesterday but size M is a bit too tight. Can I swap it for a size L? If not, how do I get a refund?",
+      "replies": [
+        {
+          "id": "reply_1",
+          "type": "best_overall",
+          "label": "Best Overall Reply",
+          "content": "Hello! Thank you for reaching out to us. We want to ensure your new denim jacket fits you absolutely perfectly. ✨\n\nYes, we can absolutely swap that for a size L for you! We have one reserved in our premium collection right now.\n\nWould you prefer us to courier the size L directly to your doorstep (complimentary, of course), or would you like to swing by the store to try it on?\n\nLet me know what works best for you! - ReplyNest AI",
+          "explanation": "This reply is polite, premium, and instantly solves the customer's issue by offering a complimentary delivery exchange, reducing friction and encouraging them to keep the item rather than refunding."
+        },
+        {
+          "id": "reply_2",
+          "type": "friendly",
+          "label": "Friendly Reply",
+          "content": "Hi there! Thanks for getting in touch. Oh, we definitely want you feeling comfortable and stylish in your new jacket! 🧥\n\nWe would be more than happy to exchange it for a size L for you. If you'd still prefer a refund, we can absolutely process that too—no questions asked.\n\nShall we get that size L prepared for you to try, or would you prefer the return details? We're here to help!",
+          "explanation": "A warm and empathetic approach that reduces customer anxiety by offering both options (exchange or refund) clearly, while gently leaning towards the exchange."
+        },
+        {
+          "id": "reply_3",
+          "type": "professional",
+          "label": "Professional Reply",
+          "content": "Dear Customer, thank you for contacting us. We appreciate your purchase and want to ensure you are completely satisfied with your experience.\n\nWe gladly offer complimentary exchanges. We currently have the denim jacket in size L available. Alternatively, if you prefer a refund, we can initiate our secure return process immediately.\n\nCould you please share your receipt or order number so I can assist you with the next steps?",
+          "explanation": "Maintains an elegant, high-end professional tone suitable for a luxury brand, requesting the necessary order details to move the process forward securely."
+        },
+        {
+          "id": "reply_4",
+          "type": "sales_focused",
+          "label": "Sales Focused Reply",
+          "content": "Hi! Thank you for choosing us. Our denim jacket is a timeless piece, and we want to make sure it looks stunning on you! \n\nWe have reserved a size L for you. By the way, many of our clients style this specific jacket with our *Signature Supima Cotton Tee*—it pairs beautifully under the denim and completes the look. \n\nWould you like me to ship the size L jacket to you, and would you like to add one of our signature tees to your package?",
+          "explanation": "Validates the customer's purchase choice and uses the exchange opportunity to upsell a matching high-quality item, increasing the Average Order Value (AOV)."
+        },
+        {
+          "id": "reply_5",
+          "type": "short",
+          "label": "Short Version",
+          "content": "Hi there! We'd love to get you that perfect fit. Yes, we can absolutely swap it for a size L or process a full refund for you. ✨\n\nWhich option would you prefer to go ahead with today?",
+          "explanation": "Concise and action-oriented, perfect for busy customers who appreciate premium service delivered quickly and directly."
+        }
+      ]
+    },
+    {
+      "id": "60e83996-82aa-407b-85b1-bc6b9a629188",
+      "userId": "da373605-96a9-4c1a-943e-ab449a2258d9",
+      "timestamp": "2026-07-02T03:35:23.845Z",
+      "businessType": "Clothing Store",
+      "goal": "Handle Complaint",
+      "tone": "Luxury Brand",
+      "message": "Hi, I bought the denim jacket yesterday but size M is a bit too tight. Can I swap it for a size L? If not, how do I get a refund?",
+      "replies": [
+        {
+          "id": "best_overall",
+          "type": "concierge",
+          "label": "Best Overall",
+          "content": "Hello! Thank you for choosing us. We want you to feel absolutely exquisite in your new denim jacket, and we would be delighted to arrange a size L for you. ✨\n\nTo ensure a flawless fit this time, would you like to verify your measurements with one of our personal stylists? If you would prefer a return instead, we can also arrange a complimentary courier collection at your convenience.\n\nWhich option would suit you best today?",
+          "explanation": "This reply delivers elite, high-touch luxury service. It makes the customer feel valued, offers a personalized stylist check to prevent further size issues, and provides a seamless, premium solution for both exchanges and refunds."
+        },
+        {
+          "id": "friendly",
+          "type": "warm_luxury",
+          "label": "Friendly",
+          "content": "Hi there! Thank you for reaching out to us. We want to make sure your new jacket feels as beautiful as it looks! 🤍\n\nWe can absolutely exchange your jacket for a size L to give you that perfect, relaxed fit. I can reserve the last L in our boutique for you right now. \n\nShall I secure it for you, or would you like to review our simple return process instead?",
+          "explanation": "A warmer, highly approachable tone that still feels premium. It creates a sense of exclusivity and urgency by offering to 'reserve the last L' for the customer."
+        },
+        {
+          "id": "professional",
+          "type": "formal_luxury",
+          "label": "Professional",
+          "content": "Dear Customer, thank you for contacting our concierge team. We want to ensure your absolute satisfaction with your recent purchase.\n\nWe would be pleased to facilitate a complimentary exchange for a size L. Alternatively, we can assist you with a full refund. \n\nPlease let us know your preference, and we will immediately initiate the process and arrange a complimentary home pickup for your return item.",
+          "explanation": "A highly polished, traditional luxury approach. It focuses on seamless, effort-free service (complimentary home pickup) to build trust and maintain a prestigious brand image."
+        },
+        {
+          "id": "sales_focused",
+          "type": "sales_oriented",
+          "label": "Sales Focused",
+          "content": "Hello! We would love to upgrade you to the size L to ensure your denim jacket drapes beautifully. \n\nWhile we arrange this exchange, our new *Supima Cotton Tees* have just arrived, which pair perfectly with that exact jacket. Would you like me to add one to your exchange package with a complimentary 10% styling gesture? \n\nLet me know and I will secure your size L jacket and package it up for you immediately! 💫",
+          "explanation": "A luxury-appropriate upsell. It smoothly transitions from the exchange request to introducing a complementary product, incentivizing the purchase with a subtle 'styling gesture' discount."
+        },
+        {
+          "id": "short",
+          "type": "concise",
+          "label": "Short",
+          "content": "Hello! We would be delighted to exchange your jacket for a size L or assist you with a complimentary return. \n\nPlease let us know your preference, and we will arrange everything for you immediately. ✨",
+          "explanation": "A swift, premium response that gets straight to the point while maintaining an elegant and accommodating tone."
+        }
+      ]
+    }
+  ],
+  "sessions": {
+    "f4de18e49da34ba3bd3e08545811984de9dfd64056e10c0e6c4455e4b2775741": "da373605-96a9-4c1a-943e-ab449a2258d9",
+    "5f49ff6bebf75099652fab1dcf0292a77809eef942d476c093fd31b0c8768181": "927f42bf-fc92-428c-a78c-aa0d49b2c5fb",
+    "4796c997fde99e43aa812ce44082dd3c9c1b48b7ceddd22a044f31bc688e9004": "927f42bf-fc92-428c-a78c-aa0d49b2c5fb"
+  }
+}

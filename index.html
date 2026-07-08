@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>ReplyNest AI - Your AI Sales Assistant for WhatsApp</title>
+    <meta name="description" content="ReplyNest AI helps you close more sales on WhatsApp in seconds. Generate highly persuasive, professional, and context-aware replies that save you hours every week." />
+    <meta name="keywords" content="AI sales assistant, WhatsApp sales assistant, WhatsApp auto reply AI, automated sales messages, customer service AI, sales closer tool, ReplyNest AI, message generator for WhatsApp" />
+    <meta name="author" content="ReplyNest AI" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
+    <!-- Open Graph / Facebook Meta Tags (for rich social previews) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ReplyNest AI - Your AI Sales Assistant for WhatsApp" />
+    <meta property="og:description" content="Generate high-converting replies, handle customer objections, and close sales on WhatsApp effortlessly with artificial intelligence." />
+    <meta property="og:site_name" content="ReplyNest AI" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ReplyNest AI - Your AI Sales Assistant for WhatsApp" />
+    <meta name="twitter:description" content="Generate high-converting replies, handle customer objections, and close sales on WhatsApp effortlessly with artificial intelligence." />
+    
+    <!-- Google Search Console and verification helper placeholder tags -->
+    <meta name="googlebot" content="index, follow, follow" />
+    
+    <!-- JSON-LD Structured Data for Google Rich Snippets -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "ReplyNest AI",
+        "alternateName": "ReplyNest",
+        "url": "https://replynest.ai",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "All",
+        "description": "Your AI Sales Assistant for WhatsApp. Generate professional replies in seconds, close more sales, and save hours every week.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD",
+          "category": "Free / Subscription"
+        },
+        "featureList": "AI Message Generation, WhatsApp Chat Analyzer, Objection Handling, Custom Brand Voice, Multilingual Support"
+      }
+    </script>
+
+    <script>
+      // Safety patch for environments where window.fetch has only a getter (e.g. some sandbox iframes)
+      (function() {
+        function patchFetch(obj) {
+          if (!obj) return;
+          try {
+            const originalFetch = obj.fetch;
+            if (originalFetch) {
+              Object.defineProperty(obj, 'fetch', {
+                get: function() { return originalFetch; },
+                set: function(val) { 
+                  console.warn('Sandbox safety patch: prevented overwrite of fetch'); 
+                },
+                configurable: true,
+                enumerable: true
+              });
+            }
+          } catch (e) {
+            // Ignore if property is non-configurable or fails
+          }
+        }
+        patchFetch(window);
+        patchFetch(typeof globalThis !== 'undefined' ? globalThis : null);
+        patchFetch(typeof global !== 'undefined' ? global : null);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
