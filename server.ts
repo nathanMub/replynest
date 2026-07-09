@@ -9,6 +9,7 @@ import { getFirestore as getAdminFirestore } from "firebase-admin/firestore";
 import fs from "fs";
 import { generateMockReplies, refineMockReply } from "./server-mock-generator";
 import Stripe from "stripe";
+import path from "path";
 
 // Patch console.error to filter out benign Firestore idle connection stream logs
 try {
@@ -62,7 +63,7 @@ async function startServer() {
   const PORT = 3000;
 
   app.use(express.json());
-
+app.use(express.static(path.join(process.cwd(), "public")));
   // Healthcheck endpoint
   app.get("/api/health", (req, res) => {
     res.json({ status: "ok", time: new Date().toISOString() });
