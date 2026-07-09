@@ -1647,7 +1647,55 @@ RULES OF ENGAGEMENT:
     });
     console.log("Production mode: Serving static files from dist.");
   }
+// ===============================
+// ReplyNest Widget Chat API
+// ===============================
 
+app.post("/api/widget/chat", async (req, res) => {
+  try {
+    const { ownerId, message } = req.body;
+
+    if (!ownerId || !message) {
+      return res.status(400).json({
+        error: "ownerId and message are required."
+      });
+    }
+
+    console.log("📩 Widget Message");
+    console.log("Owner:", ownerId);
+    console.log("Message:", message);
+
+    // -----------------------------
+    // TODO:
+    // Load the owner's Knowledge Base
+    // Query Gemini
+    // Save conversation
+    // -----------------------------
+
+    const reply = `Thanks for your message!
+
+You said:
+
+"${message}"
+
+This is ReplyNest Widget V1.
+
+The AI connection hasn't been enabled yet, but your widget is successfully communicating with the server.`;
+
+    return res.json({
+      success: true,
+      reply
+    });
+
+  } catch (err) {
+    console.error(err);
+
+    return res.status(500).json({
+      success: false,
+      reply: "Sorry, something went wrong."
+    });
+  }
+});
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server running on http://0.0.0.0:${PORT}`);
   });
